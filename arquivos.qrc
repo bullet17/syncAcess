@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/icone.ico</file>
+        <file>images/2.png</file>
+        <file>images/book.png</file>
+        <file>images/333.png</file>
+        <file>images/444.png</file>
+        <file>images/777.png</file>
+        <file>images/888.png</file>
+        <file>images/books-svgrepo-com.svg</file>
+        <file>images/emprestimo180.png</file>
+        <file>images/emprestimo200.png</file>
+        <file>images/emprestimoShadow.png</file>
+        <file>images/logo.ico</file>
+    </qresource>
+    <qresource prefix="/files">
+        <file>files/clientes.txt</file>
+        <file>files/livros.txt</file>
+        <file>files/usuarios.txt</file>
+    </qresource>
+    <qresource prefix="/banco">
+        <file>banco/biblioteca.db</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

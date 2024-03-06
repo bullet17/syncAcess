@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>telaCadastroLivro</class>
+ <widget class="QDialog" name="telaCadastroLivro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>450</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>450</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>BIBLIOTECA</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="arquivos.qrc">
+    <normaloff>:/images/images/logo.ico</normaloff>:/images/images/logo.ico</iconset>
+  </property>
+  <widget class="QPushButton" name="cadastrarLivro_btn">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>490</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{font-size: 20px;
+border-radius: 5px;
+background-color:#1d8df2;
+color: #fefefe;
+font-family:Franklin Gothic Heavy;
+}
+:hover{
+background-color:#10a7f7;}</string>
+   </property>
+   <property name="text">
+    <string>CADASTRAR</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>60</y>
+     <width>461</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#1d8df2;
+color:#fefefe;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="login_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family:Franklin Gothic Heavy;
+font-size:25px;
+color:#fefefe;
+</string>
+    </property>
+    <property name="text">
+     <string>CADASTRAR LIVRO</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>100</y>
+      <width>231</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fefefe;
+font-family:Franklin Gothic Heavy;
+font-size:13px;</string>
+    </property>
+    <property name="text">
+     <string>CÓD. LIVRO (ISBN)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="codLivro_txt">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>120</y>
+      <width>231</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid grey;
+  border-radius: 5px;
+background-color:#fefefe;
+color:#303030</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>160</y>
+      <width>331</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fefefe;
+font-family:Franklin Gothic Heavy;
+font-size:13px;</string>
+    </property>
+    <property name="text">
+     <string>TÍTULO</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="tituloLivro_txt">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>180</y>
+      <width>331</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid grey;
+  border-radius: 5px;
+background-color:#fefefe;
+color:#303030</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>280</y>
+      <width>201</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fefefe;
+font-family:Franklin Gothic Heavy;
+font-size:13px;</string>
+    </property>
+    <property name="text">
+     <string>EDITORA</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="editoraLivro_txt">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>300</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid grey;
+  border-radius: 5px;
+background-color:#fefefe;
+color:#303030</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="autorLivro_txt">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>240</y>
+      <width>331</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid grey;
+  border-radius: 5px;
+background-color:#fefefe;
+color:#303030</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>220</y>
+      <width>331</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fefefe;
+font-family:Franklin Gothic Heavy;
+font-size:13px;</string>
+    </property>
+    <property name="text">
+     <string>AUTOR</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="anoLivro_txt">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>300</y>
+      <width>121</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid grey;
+  border-radius: 5px;
+background-color:#fefefe;
+color:#303030</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>280</y>
+      <width>121</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fefefe;
+font-family:Franklin Gothic Heavy;
+font-size:13px;</string>
+    </property>
+    <property name="text">
+     <string>ANO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>100</y>
+      <width>91</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>10</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #fefefe;
+font-family:Franklin Gothic Heavy;
+font-size:13px;</string>
+    </property>
+    <property name="text">
+     <string>QUANT COPIAS</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="quantLivro_txt">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>120</y>
+      <width>91</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>0</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 1px solid grey;
+  border-radius: 5px;
+background-color:#fefefe;
+color:#303030</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>71</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{font-size: 13px;
+border-radius: 5px;
+background-color:#1d8df2;
+color: #fefefe;
+font-family:Franklin Gothic Heavy;}
+
+:hover{
+background-color:#10a7f7;}
+</string>
+   </property>
+   <property name="text">
+    <string>&lt; Voltar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>30</y>
+     <width>65</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>65</width>
+     <height>65</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="arquivos.qrc">:/images/images/333.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>cadastrarLivro_btn</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>label_6</zorder>
+ </widget>
+ <resources>
+  <include location="arquivos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

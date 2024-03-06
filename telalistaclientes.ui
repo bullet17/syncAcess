@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>telaListaClientes</class>
+ <widget class="QDialog" name="telaListaClientes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>BIBLIOTECA</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="arquivos.qrc">
+    <normaloff>:/images/images/logo.ico</normaloff>:/images/images/logo.ico</iconset>
+  </property>
+  <widget class="QTableView" name="clientes_tbw">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>641</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#fefefe;
+color:#303030;
+font-size:15px;</string>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cadNovo_btn">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>540</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{font-size: 15px;
+border-radius: 5px;
+background-color:#49b1f7;
+color: #fefefe;
+font-family:Franklin Gothic Heavy;}
+
+:hover{
+background-color:#73c3f9;}
+</string>
+   </property>
+   <property name="text">
+    <string>CADASTRAR NOVO</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="voltar_btn">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>71</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{font-size: 13px;
+border-radius: 5px;
+background-color:#49b1f7;
+color: #fefefe;
+font-family:Franklin Gothic Heavy;}
+
+:hover{
+background-color:#73c3f9;}</string>
+   </property>
+   <property name="text">
+    <string>&lt; Voltar</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>50</y>
+     <width>721</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#49b1f7;
+color:#fefefe;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="login_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>40</y>
+      <width>451</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family:Franklin Gothic Heavy;
+font-size:30px;
+color:#fefefe;
+</string>
+    </property>
+    <property name="text">
+     <string>CLIENTES CADASTRADOS</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>20</y>
+     <width>65</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>65</width>
+     <height>65</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="arquivos.qrc">:/images/images/2.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="arquivos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

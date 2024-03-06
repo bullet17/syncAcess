@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>telaMainMenu</class>
+ <widget class="QDialog" name="telaMainMenu">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>700</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>BIBLIOTECA</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="arquivos.qrc">
+    <normaloff>:/images/images/logo.ico</normaloff>:/images/images/logo.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#fefefe</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>570</y>
+     <width>721</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:15px;
+background-color:none;
+background-color:#816ae2;
+color:#fefefe;
+font-family:Franklin Gothic Heavy;
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="nomeUsuario_lb">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>0</y>
+      <width>321</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:15px;
+background-color:none;
+background-color:#816ae2;
+color:#fefefe;
+font-family:Franklin Gothic Heavy;
+</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="idUsuario_lb">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>0</y>
+      <width>61</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:15px;
+background-color:none;
+background-color:#816ae2;
+color:#fefefe;
+font-family:Franklin Gothic Heavy;
+</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>0</y>
+      <width>131</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:15px;
+background-color:none;
+background-color:#816ae2;
+color:#fefefe;
+font-family:Franklin Gothic Heavy;
+</string>
+    </property>
+    <property name="text">
+     <string>ID </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>721</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#816ae2;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="login">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>431</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-family:Franklin Gothic Heavy;
+font-size:40px;
+color:#fefefe;
+</string>
+    </property>
+    <property name="text">
+     <string>BIBLIOTECA LOCAL</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="emprestimo_bt">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>110</y>
+     <width>200</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>200</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>200</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QAbstractButton { 
+			background-color:#9d66d6;
+			border-radius:100%;
+			border:none;} 
+
+QAbstractButton:hover {			
+			background-color:#ad7fdd;
+			border-radius:100%;
+} </string>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+   <property name="icon">
+    <iconset resource="arquivos.qrc">
+     <normaloff>:/images/images/444.png</normaloff>:/images/images/444.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>180</width>
+     <height>180</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="devolucao_bt">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>110</y>
+     <width>200</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>200</horstretch>
+     <verstretch>200</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QAbstractButton { 
+			background-color:#fe4fb7;
+			border-radius:100%;
+			border:none;} 
+
+QAbstractButton:hover {			
+			background-color:#fe7ab6;
+			border-radius:100%;
+} </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="arquivos.qrc">
+     <normaloff>:/images/images/777.png</normaloff>:/images/images/777.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>180</width>
+     <height>180</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="devolucao_lb">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>260</y>
+     <width>201</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:15px;
+font-family:Franklin Gothic Heavy;
+color:#fefefe;
+border:none;
+text-align:center;
+background-color:#fe7ab6;
+border-radius:10px
+</string>
+   </property>
+   <property name="text">
+    <string>DEVOLUÇÃO</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>450</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>2316165</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:15px;
+font-family:Franklin Gothic Heavy;
+color:#fefefe;
+border:none;
+text-align:center;
+background-color:#10a7f7;
+border-radius:10px;
+</string>
+   </property>
+   <property name="text">
+    <string>LIVROS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="livros_bt">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>360</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QAbstractButton { 
+			background-color:#1d8df2;
+			border-top-right-radius: 70px;
+			border-top-left-radius: 70px;
+			border-bottom-right-radius:70px;
+			border-bottom-left-radius:70px;
+			border:none;} 
+
+QAbstractButton:hover {			
+			background-color:#10a7f7;
+} </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="arquivos.qrc">
+     <normaloff>:/images/images/333.png</normaloff>:/images/images/333.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>120</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clientes_bt">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>360</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QAbstractButton { 
+			background-color:#49b1f7;
+			border-top-right-radius: 70px;
+			border-top-left-radius: 70px;
+			border-bottom-right-radius:70px;
+			border-bottom-left-radius:70px;
+			border:none;} 
+
+QAbstractButton:hover {			
+			background-color:#73c3f9;
+} </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="arquivos.qrc">
+     <normaloff>:/images/images/2.png</normaloff>:/images/images/2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>120</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>450</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:15px;
+font-family:Franklin Gothic Heavy;
+color:#fefefe;
+border:none;
+text-align:center;
+background-color:#73c3f9;
+border-radius:10px</string>
+   </property>
+   <property name="text">
+    <string>CLIENTES</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="funcionarios_bt">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>360</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QAbstractButton { 
+			background-color:#2a428c;
+			border-top-right-radius: 70px;
+			border-top-left-radius: 70px;
+			border-bottom-right-radius:70px;
+			border-bottom-left-radius:70px;
+			border:none;} 
+
+QAbstractButton:hover {			
+			background-color:#3c58a0;
+} </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="arquivos.qrc">
+     <normaloff>:/images/images/888.png</normaloff>:/images/images/888.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>120</width>
+     <height>120</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>450</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1313</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:15px;
+font-family:Franklin Gothic Heavy;
+color:#fefefe;
+border:none;
+text-align:center;
+background-color:#3c58a0;
+border-radius:10px
+
+</string>
+   </property>
+   <property name="text">
+    <string>FUNCIONÁRIOS</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="emprestimo_lb">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>260</y>
+     <width>201</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:15px;
+font-family:Franklin Gothic Heavy;
+color:#fefefe;
+border:none;
+text-align:center;
+background-color:#ad7fdd;
+border-radius:10px
+</string>
+   </property>
+   <property name="text">
+    <string>EMPRESTIMO</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>emprestimo_bt</zorder>
+  <zorder>devolucao_bt</zorder>
+  <zorder>livros_bt</zorder>
+  <zorder>frame</zorder>
+  <zorder>frame_2</zorder>
+  <zorder>devolucao_lb</zorder>
+  <zorder>label_8</zorder>
+  <zorder>clientes_bt</zorder>
+  <zorder>label_9</zorder>
+  <zorder>funcionarios_bt</zorder>
+  <zorder>label_10</zorder>
+  <zorder>emprestimo_lb</zorder>
+ </widget>
+ <resources>
+  <include location="arquivos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
